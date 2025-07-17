@@ -1,37 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fefcfb;
+  color: #333;
+  margin: 0;
   padding: 20px;
-  background-color: #fff0f5;
 }
 
 h1 {
-  color: #c71585;
+  text-align: center;
+  color: #7a6eaa;
 }
 
 .semestre {
-  margin-bottom: 30px;
-  padding: 10px;
-  border: 2px solid #f0a;
+  background-color: #f2e9f7;
+  border: 2px solid #dbcfe6;
   border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 10px #e3d0f3;
 }
 
-.ramo {
-  padding: 8px 12px;
-  margin: 5px;
-  background-color: pink;
-  border-radius: 5px;
+.semestre h2 {
+  color: #6d4d9b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.semestre ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.semestre li {
+  background-color: #fff0f5;
+  border: 1px solid #deb3da;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-.ramo.aprobado {
-  background-color: #b19cd9;
+/* Marcado como aprobado */
+.semestre li.aprobado {
+  background-color: #d1c4e9;
   text-decoration: line-through;
-  color: white;
+  color: #6a1b9a;
 }
 
-.ramo.bloqueado {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
+/* Marcado como no aprobado */
+.semestre li.no-aprobado {
+  background-color: #ffd1dc;
+  color: #9e0031;
+}
+
+/* Si el ramo está bloqueado por prerrequisitos */
+.semestre li.bloqueado {
+  background-color: #e0e0e0;
+  color: #888;
+  pointer-events: none;
 }
