@@ -1,64 +1,54 @@
 body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #fefcfb;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefaf6;
   margin: 0;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #7a6eaa;
+  color: #7a6fa1;
 }
 
 .semestre {
-  background-color: #f2e9f7;
-  border: 2px solid #dbcfe6;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 10px #e3d0f3;
+  background-color: #f3e8ff;
+  border: 2px solid #d1c4e9;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .semestre h2 {
-  color: #6d4d9b;
-  text-align: center;
-  margin-bottom: 10px;
+  color: #5c5470;
 }
 
 .semestre ul {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
 }
 
 .semestre li {
-  background-color: #fff0f5;
-  border: 1px solid #deb3da;
+  background-color: #ffd6e0; /* rosado claro por defecto (no aprobado) */
+  margin: 8px 0;
   padding: 10px;
-  margin: 5px 0;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
+  color: #4e3f57;
+  font-weight: 500;
 }
 
-/* Marcado como aprobado */
+/* Aprobado (al hacer clic) */
 .semestre li.aprobado {
-  background-color: #d1c4e9;
+  background-color: #cba6f7; /* morado pastel */
   text-decoration: line-through;
-  color: #6a1b9a;
+  color: #3e2f4d;
 }
 
-/* Marcado como no aprobado */
-.semestre li.no-aprobado {
-  background-color: #ffd1dc;
-  color: #9e0031;
-}
-
-/* Si el ramo está bloqueado por prerrequisitos */
+/* Bloqueado por prerrequisito */
 .semestre li.bloqueado {
-  background-color: #e0e0e0;
+  background-color: #e0e0e0; /* gris pastel */
+  cursor: not-allowed;
   color: #888;
-  pointer-events: none;
 }
