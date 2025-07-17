@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva Obstetricia y Puericultura</h1>
+  <div class="semestre" id="semestre-3">
+    <h2>3° Semestre</h2>
+    <div class="ramo" onclick="aprobarRamo(this)">Fundamentos de Enfermería II</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Obstetricia Fisiológica I</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Neonatología I</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Fisiología de Sistemas</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Inmunología</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Agentes Vivos de Enfermedad</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Cs. Sociales y Salud II</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Inglés II</div>
+  </div>
 
+  <div class="semestre" id="semestre-4">
+    <h2>4° Semestre</h2>
+    <div class="ramo bloqueado" data-prerrequisito="Obstetricia Fisiológica I">Neonatología II</div>
+    <div class="ramo bloqueado" data-prerrequisito="Neonatología I">Obstetricia Fisiológica II</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Ginecología Fisiológica</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Fisiopatología</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Infectología</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Farmacología</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Integración al Desempeño Profesional II</div>
+    <div class="ramo" onclick="aprobarRamo(this)">Investigación en Salud I</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
