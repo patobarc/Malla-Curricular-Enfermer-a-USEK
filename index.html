@@ -11,111 +11,216 @@
   <h1>Malla Interactiva - Enfermería USEK</h1>
  <div class="malla">
    
-  <div class="semestre">
-    <h2>1er Semestre</h2>
-    <ul>
-      <li>Química</li>
-      <li>Anatomía</li>
-      <li>Biología Celular</li>
-      <li>Socioantropología</li>
-      <li>Integrado Matemático - Bioestadístico</li>
-      <li>Programa de Acompañamiento Académico</li>
-      <li>Introducción a la Enfermería</li>
-    </ul>
-  </div>
+  <<div class="semestre" data-semestre="1">
+  <h3>Primer Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="introduccion" data-aprobado="false">
+      Introducción a la Enfermería
+    </li>
+    <li class="ramo" data-ramo="anatomia" data-aprobado="false">
+      Anatomía
+    </li>
+    <li class="ramo" data-ramo="biologia" data-aprobado="false">
+      Biología
+    </li>
+    <li class="ramo" data-ramo="quimica" data-aprobado="false">
+      Química
+    </li>
+    <li class="ramo" data-ramo="matematico" data-aprobado="false">
+      Integrado Matemático - Bioestadístico
+    </li>
+    <li class="ramo" data-ramo="socioantropologia" data-aprobado="false">
+      Socioantropología
+    </li>
+    <li class="ramo" data-ramo="acompanamiento" data-aprobado="false">
+      Programa de Acompañamiento Académico
+    </li>
+  </ul>
+</div>
 
-  <div class="semestre">
-    <h2>2do Semestre</h2>
-    <ul>
-      <li>Bioquímica</li>
-      <li>Histoembriología</li>
-      <li>Psicología General y del Desarrollo</li>
-      <li>Taller de Liderazgo y Emprendimiento</li>
-      <li>Enfermería Ciclo Vital</li>
-      <li>Enfermería Digital</li>
-    </ul>
-  </div>
-</main>
+<div class="semestre" data-semestre="2">
+  <h3>Segundo Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="ciclo_vital" data-prerrequisitos="introduccion" data-aprobado="false">
+      Enfermería Ciclo Vital
+    </li>
+    <li class="ramo" data-ramo="bioquimica" data-prerrequisitos="quimica" data-aprobado="false">
+      Bioquímica
+    </li>
+    <li class="ramo" data-ramo="digital" data-aprobado="false">
+      Enfermería Digital
+    </li>
+    <li class="ramo" data-ramo="histoembriologia" data-prerrequisitos="anatomia,biologia" data-aprobado="false">
+      Histoembriología
+    </li>
+    <li class="ramo" data-ramo="psicodesarrollo" data-aprobado="false">
+      Psicología del Desarrollo
+    </li>
+    <li class="ramo" data-ramo="liderazgo1" data-aprobado="false">
+      Taller de Liderazgo y Emprendimiento
+    </li>
+  </ul>
+</div>
   
-  <div class="semestre">
-    <h2>3er Semestre</h2>
-    <ul>
-      <li>Microbiología y Parasitología</li>
-      <li>Fisiología</li>
-      <li>Pensamiento Crítico</li>
-      <li>Libre Configuración</li>
-      <li>Proceso Enfermero I</li>
-      <li>Metodología de la Investigación</li>
-      <li>Epidemiología y Salud Pública</li
-    </ul>
- </div>
+  <div class="semestre" data-semestre="3">
+  <h3>Tercer Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="proceso1" data-prerrequisitos="ciclo_vital" data-aprobado="false">
+      Proceso Enfermero I
+    </li>
+    <li class="ramo" data-ramo="fisiologia" data-prerrequisitos="histoembriologia" data-aprobado="false">
+      Fisiología
+    </li>
+    <li class="ramo" data-ramo="micro" data-prerrequisitos="biologia" data-aprobado="false">
+      Microbiología y Parasitología
+    </li>
+    <li class="ramo" data-ramo="pensamiento_critico" data-prerrequisitos="liderazgo1" data-aprobado="false">
+      Pensamiento Crítico
+    </li>
+    <li class="ramo" data-ramo="epidemiologia" data-aprobado="false">
+      Epidemiología y Salud Pública
+    </li>
+    <li class="ramo" data-ramo="investigacion1" data-aprobado="false">
+      Metodología de la Investigación
+    </li>
+    <li class="ramo" data-ramo="electivo1" data-aprobado="false">
+      Formación Continua (Electivo)
+    </li>
+  </ul>
+</div>
     
-  <div class="semestre">
-    <h2>4to Semestre</h2>
-    <ul>
-      <li>Farmacología</li>
-      <li>Fisiopatología</li>
-      <li>Bioética</li>
-      <li>Investigación en Enfermería</li>
-      <li>Proceso Enfermero II</li>
-      <li>Promoción y Educación para la Salud</li>
-    </ul>
-  </div>
+  <div class="semestre" data-semestre="4">
+  <h3>Cuarto Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="proceso2" data-prerrequisitos="proceso1" data-aprobado="false">
+      Proceso Enfermero II
+    </li>
+    <li class="ramo" data-ramo="farmacologia" data-prerrequisitos="fisiologia" data-aprobado="false">
+      Farmacología
+    </li>
+    <li class="ramo" data-ramo="nutricion" data-aprobado="false">
+      Nutrición
+    </li>
+    <li class="ramo" data-ramo="enfermeria_comunitaria" data-prerrequisitos="epidemiologia" data-aprobado="false">
+      Enfermería Comunitaria I
+    </li>
+    <li class="ramo" data-ramo="investigacion2" data-prerrequisitos="investigacion1" data-aprobado="false">
+      Investigación en Salud I
+    </li>
+    <li class="ramo" data-ramo="etica" data-aprobado="false">
+      Ética Profesional
+    </li>
+  </ul>
+</div>
     
-    <div class="semestre">
-    <h2>5to Semestre</h2>
-    <ul>
-      <li>Enfermería Médico-Quirúrgica</li>
-      <li>Enfermería de la Mujer y del Recién Nacido</li>
-      <li>Enfermería Gerontológica</li>
-      <li>Enfermería Comunitaria y Salud Familiar</li>
-    </ul>
-  </div>
+    <div class="semestre" data-semestre="5">
+  <h3>Quinto Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="enfermeria_comunitaria2" data-prerrequisitos="proceso2 promocion_salud" data-aprobado="false">
+      Enfermería Comunitaria y Salud Familiar
+    </li>
+    <li class="ramo" data-ramo="enfermeria_odontologica" data-prerrequisitos="proceso2 promocion_salud" data-aprobado="false">
+      Enfermería Odontológica
+    </li>
+    <li class="ramo" data-ramo="enfermeria_mujer_rn" data-prerrequisitos="fisiopatologia" data-aprobado="false">
+      Enfermería de la Mujer y el Recién Nacido
+    </li>
+    <li class="ramo" data-ramo="enfermeria_medico_quirurgico" data-prerrequisitos="proceso2 fisiopatologia" data-aprobado="false">
+      Enfermería Médico Quirúrgico
+    </li>
+  </ul>
+</div>
   
-  <div class="semestre">
-    <h2>6to Semestre</h2>
-    <ul>
-      <li>Enfermería Geriátrica</li>
-      <li>Electivo de Formación Disciplinar</li>
-      <li>Gestión del Cuidado en el Adulto y Persona Mayor Hospitalizada</li>
-      <li>Gestión del Cuidado en la Comunidad</li>
-      <li>Gestión y Liderazgo en Servicios de Enfermería</li>
-      <li>Electivo de Formación Disciplinar</li>
-    </ul>
-  </div>
+  <div class="semestre" data-semestre="6">
+  <h3>Sexto Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="gestion_adulto_hospitalizado" data-prerrequisitos="enfermeria_medico_quirurgico" data-aprobado="false">
+      Gestión del Cuidado en el Adulto y Persona Mayor Hospitalizada
+    </li>
+    <li class="ramo" data-ramo="enfermeria_geriatrica" data-prerrequisitos="enfermeria_gerontologica" data-aprobado="false">
+      Enfermería Geriátrica
+    </li>
+    <li class="ramo" data-ramo="gestion_comunidad" data-prerrequisitos="enfermeria_comunitaria2" data-aprobado="false">
+      Gestión del Cuidado en la Comunidad
+    </li>
+    <li class="ramo" data-ramo="gestion_liderazgo_enfermeria" data-prerrequisitos="" data-aprobado="false">
+      Gestión y Liderazgo en Servicios de Enfermería
+    </li>
+    <li class="ramo" data-ramo="electivo_profesional_1" data-prerrequisitos="" data-aprobado="false">
+      Electivo Profesional 1
+    </li>
+  </ul>
+</div>
   
-    <div class="semestre">
-    <h2>7mo Semestre</h2>
-    <ul>
-      <li>Enfermería Oncológica</li>
-      <li>Enfermería del Niño y del Adolescente</li>
-      <li>Enfermería en Salud Mental y Psiquiatría</li>
-      <li>Enfermería en Salud Ocupacional</li>
-      <li>Enfermería en Urgencia</li>
-      <li>Seminario de Investigación I</li>
-      <li>Gestión y Liderazgo en Servicios de Salud</li>
-    </ul>
-  </div>
+    <div class="semestre" data-semestre="7">
+  <h3>Séptimo Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="enfermeria_urgencia" data-prerrequisitos="gestion_adulto_hospitalizado" data-aprobado="false">
+      Enfermería en Urgencia
+    </li>
+    <li class="ramo" data-ramo="enfermeria_oncologica" data-prerrequisitos="enfermeria_geriatrica" data-aprobado="false">
+      Enfermería Oncológica
+    </li>
+    <li class="ramo" data-ramo="enfermeria_nino_adolescente" data-prerrequisitos="enfermeria_mujer_recién_nacido" data-aprobado="false">
+      Enfermería en el Niño y del Adolescente
+    </li>
+    <li class="ramo" data-ramo="enfermeria_salud_mental" data-prerrequisitos="" data-aprobado="false">
+      Enfermería en Salud Mental y Psiquiatría
+    </li>
+    <li class="ramo" data-ramo="enfermeria_salud_ocupacional" data-prerrequisitos="" data-aprobado="false">
+      Enfermería en Salud Ocupacional
+    </li>
+    <li class="ramo" data-ramo="seminario_investigacion_1" data-prerrequisitos="investigacion_en_enfermeria" data-aprobado="false">
+      Seminario de Investigación I
+    </li>
+    <li class="ramo" data-ramo="gestion_liderazgo_salud" data-prerrequisitos="gestion_liderazgo_enfermeria" data-aprobado="false">
+      Gestión y Liderazgo en Servicios de Salud
+    </li>
+  </ul>
+</div>
   
-  <div class="semestre">
-    <h2>8vo Semestre</h2>
-    <ul>
-      <li>Enfermería de Salud Intercultural</li>
-      <li>Gestión del Cuidado en Urgencia</li>
-      <li>Gestión del Cuidado en el Niño</li>
-      <li>Seminario de Investigación II</li>
-      <li>Electivo de Formación Disciplinar</li>
-    </ul>
-  </div>
+  <div class="semestre" data-semestre="8">
+  <h3>Octavo Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="gestion_cuidado_urgencias" data-prerrequisitos="enfermeria_urgencia" data-aprobado="false">
+      Gestión del Cuidado en Urgencias
+    </li>
+    <li class="ramo" data-ramo="enfermeria_salud_intercultural" data-prerrequisitos="" data-aprobado="false">
+      Enfermería en Salud Intercultural
+    </li>
+    <li class="ramo" data-ramo="gestion_cuidado_nino" data-prerrequisitos="enfermeria_nino_adolescente" data-aprobado="false">
+      Gestión del Cuidado en el Niño
+    </li>
+    <li class="ramo" data-ramo="seminario_investigacion_2" data-prerrequisitos="seminario_investigacion_1" data-aprobado="false">
+      Seminario de Investigación II
+    </li>
+    <li class="ramo" data-ramo="electivo_profesional_2" data-prerrequisitos="" data-aprobado="false">
+      Electivo Profesional II
+    </li>
+  </ul>
+</div>
   
-   <div class="semestre">
-    <h2>9no Semestre</h2>
-    <ul>
-      <li>Diplomado Calidad y Seguridad en la Atención en Salud</li>
-      <li>Internado Enfermería I</li>
-    </ul>
-  </div>
-
+   <div class="semestre" data-semestre="8">
+  <h3>Octavo Semestre</h3>
+  <ul>
+    <li class="ramo" data-ramo="gestion_cuidado_urgencias" data-prerrequisitos="enfermeria_urgencia" data-aprobado="false">
+      Gestión del Cuidado en Urgencias
+    </li>
+    <li class="ramo" data-ramo="enfermeria_salud_intercultural" data-prerrequisitos="" data-aprobado="false">
+      Enfermería en Salud Intercultural
+    </li>
+    <li class="ramo" data-ramo="gestion_cuidado_nino" data-prerrequisitos="enfermeria_nino_adolescente" data-aprobado="false">
+      Gestión del Cuidado en el Niño
+    </li>
+    <li class="ramo" data-ramo="seminario_investigacion_2" data-prerrequisitos="seminario_investigacion_1" data-aprobado="false">
+      Seminario de Investigación II
+    </li>
+    <li class="ramo" data-ramo="electivo_profesional_2" data-prerrequisitos="" data-aprobado="false">
+      Electivo Profesional II
+    </li>
+  </ul>
+</div>
+    
   <div class="semestre">
     <h2>10mo Semestre</h2>
     <ul>
